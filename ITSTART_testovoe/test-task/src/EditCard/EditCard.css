@@ -1,0 +1,43 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    border-radius: 15px;
+    width: 400px;
+    height: max-content;
+    background-color: #242424;
+    box-shadow: 0 0 15px 2px #646cff;
+}
+
+.form__data {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 80%;
+}
+
+.form__lable {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.form__input {
+    padding: 6px;
+    height: 34px;
+}
+
+.form__textarea {
+    padding: 6px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 50px;
+    max-height: 140px;
+}
+
+.form__btn {
+    display: flex;
+    gap: 15px;
+}
