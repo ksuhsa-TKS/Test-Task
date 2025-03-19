@@ -1,1 +1,637 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мои поездки</title>
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
+  <body>
+    <header class="header">
+      <div class="container flex header__container">
+        <nav class="flex header__nav">
+          <a href="#" class="flex header__link">Поездки</a>
+        </nav>
+        <button class="flex btn">
+          Заболоцкий К.О
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.7783 5.87608L10.7844 5.88222L12.7844 7.88217C12.7844 7.88219 12.7844 7.8822 12.7844 7.88222C12.8156 7.91347 12.8331 7.95583 12.8331 8C12.8331 8.04417 12.8156 8.08653 12.7844 8.11778C12.7844 8.1178 12.7844 8.11782 12.7844 8.11784L10.7885 10.1137C10.7573 10.1428 10.7161 10.1588 10.6734 10.1585C10.6297 10.1581 10.5879 10.1406 10.557 10.1097C10.5261 10.0788 10.5085 10.037 10.5082 9.99326C10.5078 9.95052 10.5238 9.90932 10.5529 9.87812L11.4108 9.02022L12.2644 8.16667H11.0573H5.99996C5.95576 8.16667 5.91336 8.14911 5.88211 8.11785C5.85085 8.0866 5.83329 8.0442 5.83329 8C5.83329 7.9558 5.85085 7.91341 5.88211 7.88215C5.91336 7.85089 5.95576 7.83334 5.99996 7.83334H11.0573H12.2644L11.4108 6.97978L10.5488 6.11778L10.5489 6.11773L10.5426 6.11169C10.5267 6.09632 10.514 6.07793 10.5053 6.05759C10.4966 6.03726 10.492 6.01539 10.4918 5.99326C10.4916 5.97113 10.4958 5.94918 10.5042 5.9287C10.5126 5.90822 10.5249 5.88961 10.5406 5.87396C10.5562 5.85831 10.5748 5.84593 10.5953 5.83756L10.4081 5.37986L10.5953 5.83755C10.6158 5.82917 10.6378 5.82496 10.6599 5.82515C10.682 5.82534 10.7039 5.82994 10.7242 5.83867L10.9193 5.38452L10.7242 5.83868C10.7445 5.84741 10.7629 5.86011 10.7783 5.87602L10.7783 5.87608ZM3.21544 3.88215C3.2467 3.8509 3.28909 3.83334 3.33329 3.83334C3.3775 3.83334 3.41989 3.8509 3.45114 3.88215C3.4824 3.91341 3.49996 3.9558 3.49996 4V12C3.49996 12.0442 3.4824 12.0866 3.45114 12.1179C3.41989 12.1491 3.37749 12.1667 3.33329 12.1667C3.28909 12.1667 3.2467 12.1491 3.21544 12.1179C3.18419 12.0866 3.16663 12.0442 3.16663 12V4C3.16663 3.9558 3.18419 3.91341 3.21544 3.88215Z"
+              fill="#252C32"
+              stroke="currentCollor"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="trip-table">
+        <div class="container flex trip-table__wrap">
+          <h1 class="trip-table__title">Мои поездки</h1>
+          <button class="flex trip-table__btn">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 7C12.2652 7 12.5196 7.10536 12.7071 7.29289C12.8946 7.48043 13 7.73478 13 8V11H16C16.2652 11 16.5196 11.1054 16.7071 11.2929C16.8946 11.4804 17 11.7348 17 12C17 12.2652 16.8946 12.5196 16.7071 12.7071C16.5196 12.8946 16.2652 13 16 13H13V16C13 16.2652 12.8946 16.5196 12.7071 16.7071C12.5196 16.8946 12.2652 17 12 17C11.7348 17 11.4804 16.8946 11.2929 16.7071C11.1054 16.5196 11 16.2652 11 16V13H8C7.73478 13 7.48043 12.8946 7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929C7.48043 11.1054 7.73478 11 8 11H11V8C11 7.73478 11.1054 7.48043 11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7Z"
+                fill="currentCollor"
+              />
+            </svg>
+            Оформить поездку
+          </button>
+        </div>
+
+        <div class="container">
+          <form class="flex form">
+            <div class="flex">
+              <label class="flex form__lable">
+                Период с:
+                <input type="date" class="form__input" />
+              </label>
+
+              <label class="flex form__lable">
+                по:
+                <input type="date" class="form__input" />
+              </label>
+            </div>
+
+            <label class="form__lable">
+              <input
+                type="search"
+                class="form__input form__input--search"
+                placeholder="Поиск..."
+              />
+            </label>
+
+            <button type="button" class="flex btn form__btn">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.00003 9.414L4.70703 12.707L3.29303 11.293L6.58603 8L3.29303 4.707L4.70703 3.293L8.00003 6.586L11.293 3.293L12.707 4.707L9.41403 8L12.707 11.293L11.293 12.707L8.00003 9.414Z"
+                  fill="currentCollor"
+                />
+              </svg>
+              Сбросить все
+            </button>
+
+            <label class="flex form__lable form__lable--checkbox">
+              <input type="checkbox" class="form__checkbox" />
+              <span class="form__descr">Показать архивные поездки</span>
+            </label>
+          </form>
+
+          <div class="trip-table__block">
+            <ul class="flex trip-table__list">
+              <li class="flex trip-table__item">
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">№ поездки</span>
+                  <a href="" class="trip-table__link">000115</a>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Дата поездки</span>
+                  <span class="trip-table__descr">22.02.2024 - 27.02.2024</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, план</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, факт</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Город</span>
+                  <span class="trip-table__descr">
+                    Москва, Ярославль, Ижевск, Владимир
+                  </span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Статус</span>
+                  <a
+                    href="#"
+                    class="trip-table__link trip-table__link--document"
+                  >
+                    Документы
+                  </a>
+                </span>
+              </li>
+
+              <li class="flex trip-table__item">
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">№ поездки</span>
+                  <a href="" class="trip-table__link">000117</a>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Дата поездки</span>
+                  <span class="trip-table__descr">22.02.2024 - 27.02.2024</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, план</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, факт</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Город</span>
+                  <span class="trip-table__descr">Москва</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Статус</span>
+                  <a
+                    href="#"
+                    class="trip-table__link trip-table__link--document"
+                  >
+                    Документы
+                  </a>
+                </span>
+              </li>
+
+              <li class="flex trip-table__item">
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">№ поездки</span>
+                  <a href="" class="trip-table__link">000074</a>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Дата поездки</span>
+                  <span class="trip-table__descr">22.02.2024 - 27.02.2024</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, план</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, факт</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Город</span>
+                  <span class="flex trip-table__descr">
+                    Кременчуг-Константиновское, Петропавловск-Камчатский,
+                    Новосибирск, Волго...
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM9 4C9 4.26522 8.89464 4.51957 8.70711 4.70711C8.51957 4.89464 8.26522 5 8 5C7.73478 5 7.48043 4.89464 7.29289 4.70711C7.10536 4.51957 7 4.26522 7 4C7 3.73478 7.10536 3.48043 7.29289 3.29289C7.48043 3.10536 7.73478 3 8 3C8.26522 3 8.51957 3.10536 8.70711 3.29289C8.89464 3.48043 9 3.73478 9 4ZM7 7C6.73478 7 6.48043 7.10536 6.29289 7.29289C6.10536 7.48043 6 7.73478 6 8C6 8.26522 6.10536 8.51957 6.29289 8.70711C6.48043 8.89464 6.73478 9 7 9V12C7 12.2652 7.10536 12.5196 7.29289 12.7071C7.48043 12.8946 7.73478 13 8 13H9C9.26522 13 9.51957 12.8946 9.70711 12.7071C9.89464 12.5196 10 12.2652 10 12C10 11.7348 9.89464 11.4804 9.70711 11.2929C9.51957 11.1054 9.26522 11 9 11V8C9 7.73478 8.89464 7.48043 8.70711 7.29289C8.51957 7.10536 8.26522 7 8 7H7Z"
+                        fill="#84919A"
+                      />
+                    </svg>
+                    <span class="trip-table__info" aria-hidden="true">
+                      Кременчуг-Константиновское, Петропавловск-Камчатский,
+                      Новосибирск, Волгоград, Саратов
+                    </span>
+                  </span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Статус</span>
+                  <a
+                    href="#"
+                    class="trip-table__link trip-table__link--document"
+                  >
+                    Документы
+                  </a>
+                </span>
+              </li>
+
+              <li class="flex trip-table__item">
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">№ поездки</span>
+                  <a href="" class="trip-table__link">000115</a>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Дата поездки</span>
+                  <span class="trip-table__descr">22.02.2024 - 27.02.2024</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, план</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, факт</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Город</span>
+                  <span class="trip-table__descr">
+                    Москва, Ярославль, Ижевск, Владимир
+                  </span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Статус</span>
+                  <a
+                    href="#"
+                    class="trip-table__link trip-table__link--document"
+                  >
+                    Документы
+                  </a>
+                </span>
+              </li>
+
+              <li class="flex trip-table__item">
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">№ поездки</span>
+                  <a href="" class="trip-table__link">000115</a>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Дата поездки</span>
+                  <span class="trip-table__descr">22.02.2024 - 27.02.2024</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, план</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, факт</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Город</span>
+                  <span class="trip-table__descr">
+                    Москва, Ярославль, Ижевск, Владимир
+                  </span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Статус</span>
+                  <a
+                    href="#"
+                    class="trip-table__link trip-table__link--document"
+                  >
+                    Документы
+                  </a>
+                </span>
+              </li>
+
+              <li class="flex trip-table__item">
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">№ поездки</span>
+                  <a href="" class="trip-table__link">000115</a>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Дата поездки</span>
+                  <span class="trip-table__descr">22.02.2024 - 27.02.2024</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, план</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, факт</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Город</span>
+                  <span class="trip-table__descr">
+                    Москва, Ярославль, Ижевск, Владимир
+                  </span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Статус</span>
+                  <a
+                    href="#"
+                    class="trip-table__link trip-table__link--document"
+                  >
+                    Документы
+                  </a>
+                </span>
+              </li>
+
+              <li class="flex trip-table__item">
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">№ поездки</span>
+                  <a href="" class="trip-table__link">000115</a>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Дата поездки</span>
+                  <span class="trip-table__descr">22.02.2024 - 27.02.2024</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, план</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, факт</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Город</span>
+                  <span class="trip-table__descr">
+                    Москва, Ярославль, Ижевск, Владимир
+                  </span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Статус</span>
+                  <a
+                    href="#"
+                    class="trip-table__link trip-table__link--document"
+                  >
+                    Документы
+                  </a>
+                </span>
+              </li>
+
+              <li class="flex trip-table__item">
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">№ поездки</span>
+                  <a href="" class="trip-table__link">000115</a>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Дата поездки</span>
+                  <span class="trip-table__descr">22.02.2024 - 27.02.2024</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, план</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, факт</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Город</span>
+                  <span class="trip-table__descr">
+                    Москва, Ярославль, Ижевск, Владимир
+                  </span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Статус</span>
+                  <a
+                    href="#"
+                    class="trip-table__link trip-table__link--document"
+                  >
+                    Документы
+                  </a>
+                </span>
+              </li>
+
+              <li class="flex trip-table__item">
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">№ поездки</span>
+                  <a href="" class="trip-table__link">000115</a>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Дата поездки</span>
+                  <span class="trip-table__descr">22.02.2024 - 27.02.2024</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, план</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, факт</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Город</span>
+                  <span class="trip-table__descr">
+                    Москва, Ярославль, Ижевск, Владимир
+                  </span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Статус</span>
+                  <a
+                    href="#"
+                    class="trip-table__link trip-table__link--document"
+                  >
+                    Документы
+                  </a>
+                </span>
+              </li>
+
+              <li class="flex trip-table__item">
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">№ поездки</span>
+                  <a href="" class="trip-table__link">000115</a>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Дата поездки</span>
+                  <span class="trip-table__descr">22.02.2024 - 27.02.2024</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, план</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, факт</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Город</span>
+                  <span class="trip-table__descr">
+                    Москва, Ярославль, Ижевск, Владимир
+                  </span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Статус</span>
+                  <a
+                    href="#"
+                    class="trip-table__link trip-table__link--document"
+                  >
+                    Документы
+                  </a>
+                </span>
+              </li>
+
+              <li class="flex trip-table__item">
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">№ поездки</span>
+                  <a href="" class="trip-table__link">000115</a>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Дата поездки</span>
+                  <span class="trip-table__descr">22.02.2024 - 27.02.2024</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, план</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, факт</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Город</span>
+                  <span class="trip-table__descr">
+                    Москва, Ярославль, Ижевск, Владимир
+                  </span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Статус</span>
+                  <a
+                    href="#"
+                    class="trip-table__link trip-table__link--document"
+                  >
+                    Документы
+                  </a>
+                </span>
+              </li>
+
+              <li class="flex trip-table__item">
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">№ поездки</span>
+                  <a href="" class="trip-table__link">000115</a>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Дата поездки</span>
+                  <span class="trip-table__descr">22.02.2024 - 27.02.2024</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, план</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, факт</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Город</span>
+                  <span class="trip-table__descr">
+                    Москва, Ярославль, Ижевск, Владимир
+                  </span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Статус</span>
+                  <a
+                    href="#"
+                    class="trip-table__link trip-table__link--document"
+                  >
+                    Документы
+                  </a>
+                </span>
+              </li>
+
+              <li class="flex trip-table__item">
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">№ поездки</span>
+                  <a href="" class="trip-table__link">000115</a>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Дата поездки</span>
+                  <span class="trip-table__descr">22.02.2024 - 27.02.2024</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, план</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Сумма, факт</span>
+                  <span class="trip-table__descr">29 400,00</span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Город</span>
+                  <span class="trip-table__descr">
+                    Москва, Ярославль, Ижевск, Владимир
+                  </span>
+                </span>
+
+                <span class="flex trip-table__wrap trip-table__wrap--min">
+                  <span class="trip-table__span">Статус</span>
+                  <a
+                    href="#"
+                    class="trip-table__link trip-table__link--document"
+                  >
+                    Документы
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
