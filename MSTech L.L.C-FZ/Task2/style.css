@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+div {
+  position: relative;
+  margin: 0 auto;
+  width: 1395px;
+  height: auto;
+  overflow: hidden;
+}
+
+p {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  font-size: 130px;
+  line-height: 1.1;
+  color: white;
+}
+
+span {
+  position: relative;
+  padding: 0 16px 10px;
+  background: black;
+  z-index: 2;
+}
+
+span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 36%;
+  background: black;
+  z-index: -1;
+}
+
+span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 300%;
+  height: 24%;
+  background: black;
+  z-index: -1;
+}
+
+span:nth-child(2) {
+  margin-right: auto;
+}
+
+span:nth-child(5) {
+  margin-right: auto;
+}
+
+span:nth-child(10) {
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  div {
+    width: 1238px;
+  }
+
+  video {
+    width: auto;
+    height: 100%;
+  }
+
+  p {
+    font-size: 180px;
+  }
+
+  span:nth-child(3) {
+    margin-right: 644px;
+  }
+
+  span:nth-child(3)::after,
+  span:nth-child(3)::before {
+    width: 500%;
+  }
+
+  span:nth-child(5) {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  span:nth-child(5)::after,
+  span:nth-child(5)::before {
+    left: -100%;
+  }
+}

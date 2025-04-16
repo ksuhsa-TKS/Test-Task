@@ -1,0 +1,132 @@
+@media (max-width: 1540px) {
+  /* header */
+
+  .header {
+    background-color: #222;
+  }
+}
+
+@media (max-width: 1300px) {
+  /* hero */
+
+  .hero {
+    min-height: 860px;
+    padding: 0;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero__wrap {
+    padding: 100px var(--padding-160) 40px;
+    width: 100%;
+    height: 100%;
+    background: #22222294;
+  }
+
+  /* content */
+
+  .content {
+    justify-content: end;
+  }
+
+  .content__wrap {
+    padding-right: var(--padding-160);
+    width: clamp(320px, 60vw, 640px);
+  }
+
+  .content__wrap::before {
+    content: "";
+    width: clamp(460px, 30vw, 575px);
+  }
+
+  .content__wrap::after {
+    content: "";
+    background: none;
+    width: 0;
+  }
+
+  /* form */
+
+  .form__block {
+    padding-right: 500px;
+  }
+
+  .form__block::after {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form__block {
+    margin: 0 auto;
+    padding: var(--padding-40) var(--padding-160);
+    width: clamp(320px, 60vw, 575px);
+  }
+
+  .form__block::after {
+    width: 0;
+    height: 0;
+    background: none;
+  }
+
+  .form__title {
+    margin-bottom: var(--padding-40);
+  }
+}
+
+@media (max-width: 768px) {
+  .header > a {
+    margin-right: auto;
+  }
+
+  .hero {
+    min-height: 555px;
+  }
+
+  .footer__bottom {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+  }
+
+  .footer__wrap {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer__wrap > .logo,
+  .footer__wrap > .footer__list {
+    padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .content__wrap {
+    padding: 0 var(--padding-160);
+    width: 100%;
+  }
+
+  .content__wrap::before {
+    width: 0;
+    height: 0;
+    background: none;
+  }
+
+  .footer__nav {
+    padding-right: var(--padding-160);
+    padding-left: var(--padding-160);
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .footer__list {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

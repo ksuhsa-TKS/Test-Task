@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <video autoplay muted loop disablepictureinpicture>
+        <source
+          src="https://msttestaddfiles.netlify.app/video.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <p id="descr"></p>
+    </div>
+  </body>
+
+  <script>
+    const string =
+      "We're here to make healthy living effortless, so you can live longer and happier";
+
+    string.split(" ").map((el) => {
+      let span = document.createElement("span");
+      span.textContent = el;
+      document.getElementById("descr").append(span);
+    });
+
+    // window.addEventListener("resize", () => {
+    //   const spanArr = document.querySelectorAll("span");
+    //   const br = document.createElement("br");
+    //   if (screen.width === 768) {
+    //     spanArr[1].after(br);
+    //   }
+    // });
+  </script>
+</html>
