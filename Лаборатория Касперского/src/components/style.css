@@ -1,0 +1,87 @@
+.light-text {
+  color: #fafafa;
+}
+
+.mark {
+  margin-right: 0;
+}
+
+.info {
+  border: 2px solid #bfbfbf;
+  width: 12px;
+  height: 12px;
+}
+
+.info > svg {
+  color: #fafafa;
+}
+
+.title {
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+div > .link {
+  text-decoration: underline;
+}
+
+.wrap-svg {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  font-size: clamp(12px, 2vw, 14px);
+}
+
+.wrap-svg > span > svg {
+  width: 16px;
+  height: 16px;
+  fill: #fafafa;
+  stroke: #fafafa;
+}
+
+div > .description {
+  font-size: clamp(12px, 2vw, 14px);
+}
+
+.description > button {
+  display: block;
+}
+
+.keywords > span:not(.keyword) {
+  display: none;
+}
+
+.keyword {
+  margin: 2px 0;
+  padding: 0 8px;
+  border: 1px solid #434343;
+  border-radius: 18px;
+}
+
+div > .main-link {
+  display: inline;
+  padding: 4px 8px;
+  border-radius: 8px;
+  width: max-content;
+  background-color: #434343;
+}
+
+.statistic {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.menu {
+  border: none;
+  height: auto;
+  color: #bfbfbf;
+}
+
+.menu > span > svg {
+  fill: #fafafa;
+}
+
+.min-card {
+  border-color: #85a5ff;
+  font-size: clamp(12px, 2vw, 14px);
+}
