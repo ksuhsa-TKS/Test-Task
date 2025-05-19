@@ -27,8 +27,14 @@ export function Card({
   type,
   gender,
   image,
-  onClickHandler
+  onClickHandler,
+  props
 }) {
+  // Создаем отдельный обюработчик в котором передаем props для корректного рендера Popup.
+  const handleClick = useCallback(() => {
+    onClickHandler && onClickHandler(props);
+  }, [onClickHandler, props]);
+
   return (
     <CardContainer onClick={onClickHandler}>
       <CardImg src={image} alt={name} />
