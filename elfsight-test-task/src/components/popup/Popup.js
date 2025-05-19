@@ -15,6 +15,21 @@ export function Popup({ settings: { visible, content = {} }, setSettings }) {
     }));
   }, [setSettings]);
 
+   const notTogglePopup = useCallback((e) => e.stopPropagation(), []);
+
+  // Эффект для закрытия окна при нажатии на Esc.
+  useEffect(() => {
+    const handleKeyDown = (e) => e.key === 'Escape' && togglePopup();
+
+    // Добавляем слушатель при открытие окна.
+    visible && window.addEventListener('keydown', handleKeyDown);
+
+    // Удаляем слушатель при закрытие окна.
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [visible, togglePopup]);
+  
   // Эффект для управления прокруткой body.
   useEffect(() => {
     if (visible) {
@@ -56,8 +71,8 @@ export function Popup({ settings: { visible, content = {} }, setSettings }) {
   } = content;
 
   return (
-    <PopupContainer visible={visible}>
-      <StyledPopup>
+    <PopupContainer visible={visible} onClick={togglePopup}>
+      <StyledPopup onClick={notTogglePopup}>
         <CloseIcon onClick={togglePopup} />
 
         <PopupHeader
