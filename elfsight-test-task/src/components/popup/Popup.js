@@ -15,7 +15,7 @@ export function Popup({ settings: { visible, content = {} }, setSettings }) {
     }));
   }, [setSettings]);
 
-   const notTogglePopup = useCallback((e) => e.stopPropagation(), []);
+  const notTogglePopup = useCallback((e) => e.stopPropagation(), []);
 
   // Эффект для закрытия окна при нажатии на Esc.
   useEffect(() => {
@@ -29,7 +29,7 @@ export function Popup({ settings: { visible, content = {} }, setSettings }) {
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [visible, togglePopup]);
-  
+
   // Эффект для управления прокруткой body.
   useEffect(() => {
     if (visible) {

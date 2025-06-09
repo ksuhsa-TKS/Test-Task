@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { ReactComponent as Male } from '../assets/genders/male.svg';
 import { ReactComponent as Female } from '../assets/genders/female.svg';
 import { ReactComponent as Genderless } from '../assets/genders/genderless.svg';
+import { useCallback } from 'react';
 
 // Выносим иконки и цветовое решение отдельно для быстрого доступа и стандартизации.
 const GENDER_ICONS = {
@@ -36,7 +37,7 @@ export function Card({
   }, [onClickHandler, props]);
 
   return (
-    <CardContainer onClick={onClickHandler}>
+    <CardContainer onClick={handleClick}>
       <CardImg src={image} alt={name} />
 
       <CardContent>

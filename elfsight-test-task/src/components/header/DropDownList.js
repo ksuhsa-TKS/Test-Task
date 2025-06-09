@@ -37,6 +37,7 @@ export const DropDownList = ({ nameList, listItem, onChange, valueList }) => {
     [nameList, onChange]
   );
 
+  // Закрываем список если клик происходит вне его окна.
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {

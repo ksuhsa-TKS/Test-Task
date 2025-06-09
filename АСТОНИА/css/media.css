@@ -1,0 +1,37 @@
+@media (max-width: 900px) {
+  .head__wrap {
+    align-items: center;
+  }
+
+  .head {
+    flex-flow: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us__container {
+    flex-flow: column;
+  }
+
+  .contact-us__content {
+    width: 100%;
+    gap: clamp(12px, 3vw, 20px);
+  }
+
+  .contact-us__list {
+    justify-content: start;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .form__lable {
+    gap: 4px;
+  }
+
+  .form__pop-up {
+    bottom: 2px;
+  }
+}
